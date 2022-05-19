@@ -1,0 +1,174 @@
+body{
+    width: 1220px; /* increase the width of the body to make space for the sidebar on the right */
+    border: 2px solid black; /* add a 2px border in black around the content */
+    margin: 20px auto; /* 20px margin from top and bottom of the browser body and auto makes the content sit equidistant from the left and right of the browser body */
+    padding: 20px; /* make the content inside the body sit at a 20px gap from all the 4 sides */
+    border-radius: 10px; /* round the edges of the border */
+    font-family: sans-serif; /* change the default font to sans serif */
+}
+
+header{
+    text-align:center; 
+}
+
+h1{
+    color: #800d29; /* using a hex code to change the colour */
+    font-family: cursive; /* changes how the text looks to use the cursive font */
+
+}
+h2{
+    color: #800d29; /* using a hex code to change the colour */
+    font-family: cursive; /* changes how the text looks to use the cursive font */
+}
+.titleImg{
+    width: 200px;
+    height:100px;
+    border: black 2px solid;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+main{
+    width: 600px; /* set the width of the main section */
+    margin: auto;
+    display: inline-block;
+}
+
+.titleImg{
+    left: 50%;
+}
+
+main h2{
+    text-align: center;
+    color: #800d29;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: #247881; /* add colour to the nav background */
+    padding: 20px 0; /* add a 20 px top and bottom padding in the nav tag  */
+    text-align: center; /* make the text in the nav centered */
+}
+
+nav a{
+    font-size: 20px; /* make the text bigger than default */
+    font-weight: bold; /* make the text bold */
+    color: #890417; /* change the colour of the text links */
+    text-decoration: none; /* remove the underline */
+    padding: 0 30px; /* push the links away from the other links */  
+}
+
+nav a:hover{
+    background-color: aquamarine;
+    padding: 5px;
+}
+
+
+nav ul{ /* applies these styles to all the child <ul> tags in <nav> */
+    list-style-type: none; /* remove the dots from the list */
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li{ /* Only applies these styles to the immediate child <li> in the immediate child <ul> in <nav>. Basically it only affects the <li> in the main menu not the sub menu */
+    display: inline-block; /* to make the links in the main menu site side by side */
+    position: relative; /* to make the parent <li> as the container element of the absolutely positioned <ul> representing the sub menu */
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+	width: 200px;
+	position: absolute; /* put the sub menu in a separate layer */
+	z-index: 999; /* make sure the sub menu is not hidden behind other elements */
+	text-align: left;
+	background-color: #92BA92;
+    box-shadow: 0 0 5px #247881;
+}
+
+nav ul li ul li a{ /* styles for the <a> in the sub menu */
+    color: #890417;
+    padding: 10px;
+    display: block; /* to make sure the anchor tags occupy all the space available otherwise the hover colour changes do not have a good user experience. */
+}
+
+nav ul li ul li:hover a:hover{ /* styles for the <a> in the sub menu on mouse over */
+    color: #890417;
+    background-color: #247881;
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+    display: none; /* hide the sub menu by default */
+}
+
+nav ul li:hover ul{/* applies styles only to the sub menu whose parent <li> is hovered */
+    display: block; /* show the sub menu when a user brings their mouse over the parent <li> */
+}
+
+.rightAside{
+    width: 200px; /* set the width of the sidebar */
+    float: right; /* push the sidebar to the right */
+    border: 4px solid #9f0015;
+    box-shadow:5px 10px 8px #888888;
+    margin: 20px;
+}
+
+.rightAside a:hover{
+background-color: aquamarine;
+padding: 5px;
+}
+
+
+
+.leftAside{
+    width: 200px; /* set the width of the sidebar */
+    float: left; /* push the sidebar to the right */
+    border: 4px solid #9f0015;
+    box-shadow:5px 10px 8px #888888;
+    margin: 20px;
+  
+}
+
+.Thumbnail{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    height: 100px;
+    margin-left: -20px;
+  }
+
+
+aside h3{
+    color: #890417; /* changes colour */
+    text-align: center; /* centers text */
+    font-family: sans-serif; /* changes font family */
+    font-size: 24px; /* changes font size */
+    background-color: #247881; /* adds a background colour */
+    padding: 10px 0; /* adds some space on the top and bottom */
+}
+aside ul{
+    list-style: none; /* removes the dots */
+    padding-left: 0; /* removes the gap on the left */
+}
+
+aside li{
+    line-height: 30px; /* So that we have more space above and below the list items. You can also use padding instead! */
+    padding-left: 5px; /* to push the text a little bit away from the left */
+    font-weight: bold; /* make text bold */
+}
+
+aside ul li a{
+    color: #890417;
+    text-decoration: none;
+}
+
+
+
+footer{
+    clear: both; /* clear the floating elements above */
+    text-align: center; /* Center the text in the footer */
+    font-weight: bold; /* make the text bold */
+    background-color: #247881; /* add colour to the  background */
+    padding: 20px 0; /* add a 20 px top and bottom padding in the footer tag  */
+    font-size: 20px; /* make the text bigger than default */
+    color: #9f0015; /* change the colour of the text */
+}
+

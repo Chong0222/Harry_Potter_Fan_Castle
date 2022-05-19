@@ -1,0 +1,186 @@
+<!-- Chong Cao 8707437 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="icon" href="images/hp.ico">
+    <title>Harry Potter Fans' Castle</title>
+</head>
+
+<body>
+    <header>
+        <!-- https://www.housebeautiful.com/room-decorating/a29210333/harry-potter-wallpaper-minalima/ -->
+        <img src="images/map.jpg" alt="Map" class="titleImg">
+        <h1>Harry Potter Fans' Castle</h1>
+        <h2>We Value Your Feedback</h2>
+    </header>
+
+    <nav>
+        <!-- First level UL for the main -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li>
+                <a href="video.html">Videos</a>
+                <!-- Second level UL for the sub menu -->
+                <ul>
+                    <li><a href="">Books</li></a>
+                    <li><a href="">Movies</li></a>
+                    <li><a href="">Interviews</li></a>
+                    <li><a href="">20th Anniversary</li></a>
+                </ul>
+            </li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact">
+        <form action="" method="post">
+            <div tabindex="1">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="username">
+                </div>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="useremail">
+                </div>
+            </div>
+            <div tabindex="2" class="field">
+                <label for="favourite">Favourite part:</label>
+                <select name="parts" id="parts">
+                    <optgroup label="Image page">
+                        <option value="images"></option>
+                        <option value="images">Images</option>
+                        <option value="navigation">Navigation</option>
+                        <option value="links">Related Links</option>
+                    </optgroup>
+                    <optgroup label="Table page">
+                        <option value="books">Book statistics</option>
+                        <option value="movie">Movie statistics</option>
+                        <option value="link">Related Links</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div tabindex="3" class="field">
+                <label for="favourite">Contact preference:</label>
+                <select name="" multiple>
+                    <option value="">Morning</option>
+                    <option value="">Afternoon</option>
+                    <option value="">Night</option>
+                </select>
+            </div>
+
+            <div tabindex="4" class="field">
+                <label for="">Tell us more:</label>
+                <textarea name="" id="" cols="50" rows="7"></textarea>
+            </div>
+
+            <div tabindex="5" class="finalInput">
+                <div>
+                    <button type="reset">Reset</button>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <aside class="leftAside">
+        <h3>Navigation</h3>
+        <ul>
+            <li>
+                <div class="leftNav">
+                    <a href="index.html">
+                        <figure>
+                            <img src="images/golden.jpg" alt="Golden Snitch" class="Thumbnail">
+                            <figcaption>Golden Snitch</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="images.html">
+                    <figure>
+                        <img src="images/books.png" alt="Novels" class="Thumbnail">
+                        <figcaption>Fiction</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="video.html">
+                    <figure>
+                        <img src="images/War.jpg" alt="War" class="Thumbnail">
+                        <figcaption>Films</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="table.html">
+                    <figure>
+                        <img src="images/hedwig.jpg" alt="Hedwig" class="Thumbnail">
+                        <figcaption>Deathly Hallow</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="feedback.html">
+                    <figure>
+                        <img src="images/wand.jpg" alt="Wand" class="Thumbnail">
+                        <figcaption>Magical World</figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <aside class="rightAside">
+        <form action="" method="post">
+            <h3>What Do You Like About Us</h3>
+            <div tabindex="6" class="checkbox">
+                <div>
+                    <input type="checkbox" name="fun" value="fun">
+                    <label for="fun">Fun to visit</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="design" value="design">
+                    <label for="design">Well designed</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="color" value="color">
+                    <label for="color">Uses good colours</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="picture" value="picture">
+                    <label for="design">Uses good pictures</label>
+                </div>
+            </div>
+            <h3>Will you Visit my Site Again?</h3>
+            <div tabindex="7" class="row">
+                <div class="column">
+                    <input type="radio" name="yes" value="yes">
+                    <label for="yes">-Yes</label>
+                </div>
+                <div class="column">
+                    <input type="radio" name="no" value="no">
+                    <label for="no">-No</label>
+                </div>
+            </div>
+        </form>
+    </aside>
+
+    <footer>
+        &copy; Copyright Chong Cao, 2022
+    </footer>
+</body>
+
+</html>
